@@ -8,24 +8,33 @@ div {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  
   width: 150px;
   height: 180px;
+  
+  transform: translate(-50%, -50%);
+  
   border: 6px solid #262626;
   border-top: 2px solid transparent;
   border-radius: 5px 5px 15px 15px;
+  
   background: url(image1.png) 0 0/450% 100% repeat-x; /*url position/size repeat origin clip*/
+  
   box-shadow: 0 0 0 6px white;
+  
   animation: animate 6s linear infinite alternate;
 }
 
 div::after {
-  content: "";
+  content: ""; 
+  
   position: absolute;
-  height: 80px;
-  width: 50px;
   left: 157px;
   top: 30px;
+  
+  height: 80px;
+  width: 50px;
+    
   border: 6px solid white;
   border-radius: 0 35px 35px 0;
 }
